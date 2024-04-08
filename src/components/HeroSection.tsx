@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
+// import { Button } from './ui/moving-border'
 
 const HeroSection = () => {
     return (
@@ -11,14 +12,16 @@ const HeroSection = () => {
             />
 
             <div className='p-4 relative z-10 w-full text-center  '>
-                <h1 className='mt-10 md:mt-0 text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-50 font-bold '>Master the art of Tabla</h1>
+                <h1 className='mt-10 md:mt-0 text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-50 font-bold '>Sunsets and good vibes</h1>
                 <p
                     className='mt-4 font-normal text-base md:text-lg text-neutral-300 mx-auto max-w-lg'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ipsum voluptatibus, alias dolorum recusandae laudantium. Quo tenetur possimus molestias nostrum.
+                    As the sun dips beneath the horizon, painting the sky with hues of orange and pink, a sense of tranquility fills the air. It's a moment to cherish, where worries fade, and only good vibes remain, wrapping us in warmth and serenity
                 </p>
                 <div className='mt-4'>
                     <Link href={"/courses"}>
-                        Explore Music
+                        <button className='text-white border border-white-500 rounded-full py-3 px-4'>
+                            View More
+                        </button>
                     </Link>
                 </div>
             </div>

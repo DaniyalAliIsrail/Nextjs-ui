@@ -11,19 +11,19 @@ const Navbar = ({ className }: { className?: string }) => {
             className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
             <Menu setActive={setActive}>
                 <Link href="/">
-                    <MenuItem setActive={setActive} active={active} item="Home1" >
-                        daniyal
+                    <MenuItem setActive={setActive} active={active} item="Home" >
+                        
                     </MenuItem>
                 </Link>
 
                 <Link href="/courses">
-                    <MenuItem setActive={setActive} active={active} item="ourCourse" >
+                    <MenuItem setActive={setActive} active={active} item="ourMusic" >
                         <div className="flex flex-col text-sm space-y-4">
                             <HoveredLink href="/courses">
                                 Basic Music theory
                             </HoveredLink>
                             <HoveredLink href="/courses">
-                                Advaanced composition
+                                Advanced composition
                             </HoveredLink>
                             <HoveredLink href="/courses">
                                 Music production
@@ -36,10 +36,10 @@ const Navbar = ({ className }: { className?: string }) => {
                     </MenuItem>
                 </Link>
 
-                <Link href={"/contact"}>
-                    <MenuItem setActive={setActive} active={active} item="Contact us">
-                    </MenuItem>
-                </Link>
+                 <Link href={"/contact"}>
+                            <MenuItem setActive={setActive} active={active} item="Contact us">
+                            </MenuItem>
+                        </Link>
 
             </Menu>
         </div>

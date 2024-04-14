@@ -17,9 +17,9 @@ const HeroSection = () => {
                     className='mt-4 font-normal text-base md:text-lg text-neutral-300 mx-auto max-w-lg'>
                     As the sun dips beneath the horizon, painting the sky with hues of orange and pink, a sense of tranquility fills the air. It's a moment to cherish, where worries fade, and only good vibes remain, wrapping us in warmth and serenity
                 </p>
-                <div className='mt-5'>
+                <div className='mt-5 p-5 '>
                     <Link href={"/courses"}>
-                        <button className='text-white border border-white-500 rounded-full py-3 px-4'>
+                        <button className='text-white border border-white-500 hover:bg-white hover:text-black rounded-full py-3 px-4 transition ease-in'>
                             View More
                         </button>
                     </Link>
